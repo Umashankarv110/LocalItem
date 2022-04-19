@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">LocalItem</string>
+
+    <string name="facebook_app_id" translatable="false">170465344400869</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb170465344400869</string>
+    <string name="title_activity_home_user">HomeUserActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="string_permission_help">Help</string>
+    <string name="string_permission_help_text">The permission is missing.\n\nTo grant this permission click on Settings, then Permissions and turn the permission on.\n\nThen click back twice to return to the app</string>
+    <string name="string_permission_quit">Exit App</string>
+    <string name="string_settings">Settings</string>
+
+    <string name="website_link">
+        <a href="http://kiratcommunications.com/">Kirat Communications</a>
+    </string>
+
+    <string-array name="Spinner_Type">
+        <item> Select Type</item>
+        <item> Home </item>
+        <item>Office</item>
+    </string-array>
+
+    <string-array name="Spinner_City">
+        <item>*Select City</item>
+        <item>Safidon </item>
+        <item>Assandh</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="Spinner_State">
+        <item> Select State</item>
+        <item> Andra Pradesh </item>
+        <item> Arunachal Pradesh </item>
+        <item> Assam </item>
+        <item> Bihar </item>
+        <item> Chhattisgarh </item>
+        <item> Goa </item>
+        <item> Gujarat </item>
+        <item> Haryana </item>
+        <item> Himachal Pradesh </item>
+        <item> Jammu and Kashmir </item>
+        <item> Jharkhand </item>
+        <item> Karnataka </item>
+        <item> Kerala </item>
+        <item> Maharashtra </item>
+        <item> Madya Pradesh </item>
+        <item> Manipur </item>
+        <item> Rajasthan </item>
+        <item> Uttar Pradesh </item>
+    </string-array>
+    <string name="title_activity_customer_main">CustomerMainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+</resources>

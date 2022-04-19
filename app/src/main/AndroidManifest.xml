@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.umashankar.localitem">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".OldPrintActivityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InvoiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NoInternetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AccountSettingActivity"
+            android:theme="@style/DemoTheme" />
+        <activity
+            android:name=".ViewOrderDetailsActivity"
+            android:theme="@style/DemoTheme" />
+        <activity
+            android:name=".MyOrdersActivity"
+            android:theme="@style/DemoTheme" />
+        <activity
+            android:name=".OfflineActivity"
+            android:theme="@style/DemoTheme" />
+        <activity
+            android:name=".OrderSummaryActivity"
+            android:theme="@style/DemoTheme" />
+        <activity
+            android:name=".ViewOffersActivity"
+            android:theme="@style/DemoTheme" />
+        <activity
+            android:name=".MyAddressBook"
+            android:theme="@style/DemoTheme" />
+        <activity
+            android:name=".AddToCartActivity"
+            android:theme="@style/DemoTheme" />
+        <activity
+            android:name=".ProductDetailActivity"
+            android:theme="@style/DemoTheme" />
+        <activity
+            android:name=".LoginAuthActivity"
+            android:theme="@style/DemoTheme" />
+        <activity
+            android:name=".FinalOrderActivity"
+            android:theme="@style/DemoTheme" />
+        <activity
+            android:name=".HomeUserActivity"
+            android:label="@string/title_activity_home_user" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/DemoTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <data
+                    android:host="rzp.io"
+                    android:scheme="io.rzp" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.razorpay.RzpTokenReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="rzp.device_token.share" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:exported="true"
+            android:value="rzp_live_0zK5Wp6XB5A8Kj" />
+
+        <service
+            android:name=".HelperClass.MyFirebaseServices"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".permission.PermissionsActivity"
+            android:screenOrientation="portrait" /> <!-- File Provider -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.umashankar.localitem.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>
