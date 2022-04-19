@@ -18,52 +18,52 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".OldPrintActivityActivity"
+            android:name="com.umashankar.localitem.OldPrintActivityActivity"
             android:exported="false" />
         <activity
-            android:name=".InvoiceActivity"
+            android:name="com.umashankar.localitem.InvoiceActivity"
             android:exported="false" />
         <activity
-            android:name=".NoInternetActivity"
+            android:name="com.umashankar.localitem.NoInternetActivity"
             android:exported="false" />
         <activity
-            android:name=".AccountSettingActivity"
+            android:name="com.umashankar.localitem.AccountSettingActivity"
             android:theme="@style/DemoTheme" />
         <activity
-            android:name=".ViewOrderDetailsActivity"
+            android:name="com.umashankar.localitem.ViewOrderDetailsActivity"
             android:theme="@style/DemoTheme" />
         <activity
-            android:name=".MyOrdersActivity"
+            android:name="com.umashankar.localitem.MyOrdersActivity"
             android:theme="@style/DemoTheme" />
         <activity
-            android:name=".OfflineActivity"
+            android:name="com.umashankar.localitem.OfflineActivity"
             android:theme="@style/DemoTheme" />
         <activity
-            android:name=".OrderSummaryActivity"
+            android:name="com.umashankar.localitem.OrderSummaryActivity"
             android:theme="@style/DemoTheme" />
         <activity
-            android:name=".ViewOffersActivity"
+            android:name="com.umashankar.localitem.ViewOffersActivity"
             android:theme="@style/DemoTheme" />
         <activity
-            android:name=".MyAddressBook"
+            android:name="com.umashankar.localitem.MyAddressBook"
             android:theme="@style/DemoTheme" />
         <activity
-            android:name=".AddToCartActivity"
+            android:name="com.umashankar.localitem.AddToCartActivity"
             android:theme="@style/DemoTheme" />
         <activity
-            android:name=".ProductDetailActivity"
+            android:name="com.umashankar.localitem.ProductDetailActivity"
             android:theme="@style/DemoTheme" />
         <activity
-            android:name=".LoginAuthActivity"
+            android:name="com.umashankar.localitem.LoginAuthActivity"
             android:theme="@style/DemoTheme" />
         <activity
-            android:name=".FinalOrderActivity"
+            android:name="com.umashankar.localitem.FinalOrderActivity"
             android:theme="@style/DemoTheme" />
         <activity
-            android:name=".HomeUserActivity"
+            android:name="com.umashankar.localitem.HomeUserActivity"
             android:label="@string/title_activity_home_user" />
         <activity
-            android:name=".SplashActivity"
+            android:name="com.umashankar.localitem.SplashActivity"
             android:exported="true"
             android:theme="@style/DemoTheme">
             <intent-filter>
@@ -73,7 +73,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".PaymentActivity"
+            android:name="com.umashankar.localitem.PaymentActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -98,7 +98,7 @@
             android:value="rzp_live_0zK5Wp6XB5A8Kj" />
 
         <service
-            android:name=".HelperClass.MyFirebaseServices"
+            android:name="com.umashankar.localitem.HelperClass.MyFirebaseServices"
             android:exported="true">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
@@ -106,7 +106,7 @@
         </service>
 
         <activity
-            android:name=".permission.PermissionsActivity"
+            android:name="com.umashankar.localitem.permission.PermissionsActivity"
             android:screenOrientation="portrait" /> <!-- File Provider -->
         <provider
             android:name="androidx.core.content.FileProvider"
